@@ -6,18 +6,10 @@ import org.junit.jupiter.api.Test
 internal class PartTwoTest {
 
     @Test
-    fun `Test reportRepair for 2020`() {
+    fun `Test triple sums`() {
         assertEquals(
-            979 * 366 * 675,
-            reportRepairTriple(
-                listOf(
-                    1721,
-                    979,
-                    366,
-                    299,
-                    675,
-                    1456,
-                ), 2020
+            5, sonarSweepTriple(
+                listOf(199, 200, 208, 210, 200, 207, 240, 269, 260, 263)
             )
         )
     }

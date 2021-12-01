@@ -2,19 +2,28 @@ package dev.mfazio.aoc.twentyone.dayone
 
 import dev.mfazio.aoc.twentyone.util.InputHelpers
 
-fun reportRepairTriple(reportItems: List<Int>, expectedTotal: Int): Int = reportItems.flatMap { first ->
-    reportItems.flatMap { second ->
-        reportItems.map { third ->
-            if (first + second + third == expectedTotal) {
-                first * second * third
-            } else 0
-        }
-    }
-}.firstOrNull { it != 0 } ?: 0
+/*
+    A: 607 (N/A - no previous sum)
+    B: 618 (increased)
+    C: 618 (no change)
+    D: 617 (decreased)
+    E: 647 (increased)
+    F: 716 (increased)
+    G: 769 (increased)
+    H: 792 (increased)
+*/
+fun sonarSweepTriple(measurements: List<Int>): Int {
+    val measurementSums = measurements.mapIndexed { index, measurement ->
+        if (index >= 2) {
+            (0..2).sumOf { measurements[index - it] }
+        } else -1
+    }.filter { it > 0 }
+
+    return sonarSweep(measurementSums)
+}
 
 fun main() {
-    val inputs =
-        InputHelpers.getListOfStringsFromFile("/dayone.txt").map(String::toInt)
+    val input = InputHelpers.getListOfStringsFromFile("/dayone.txt").map(String::toInt)
 
-    println("Result = ${reportRepairTriple(inputs, 2020)}")
+    println(sonarSweepTriple(input))
 }
