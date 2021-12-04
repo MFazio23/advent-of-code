@@ -1,4 +1,4 @@
-package dev.mfazio.aoc.twentyone.daytwo
+package dev.mfazio.aoc.twentyone.daythree
 
 import dev.mfazio.aoc.twentyone.util.InputHelpers
 import org.junit.jupiter.api.Assertions
@@ -8,10 +8,10 @@ internal class PartOneTest {
 
     @Test
     fun `Test dive results`() {
-        val testValues = InputHelpers.getListOfStringsFromFile("/daytwo.txt")
+        val testValues = InputHelpers.getListOfStringsFromFile("/daythree.txt")
         Assertions.assertEquals(
-            150,
-            dive(testValues)
+            198,
+            diagnostic(testValues)
         )
     }
 }
