@@ -13,4 +13,13 @@ internal class PartTwoTest {
             )
         )
     }
+
+    @Test
+    fun `Test windowed triple sums`() {
+        assertEquals(
+            5, sonarSweepWindowedTriple(
+                listOf(199, 200, 208, 210, 200, 207, 240, 269, 260, 263)
+            )
+        )
+    }
 }

@@ -22,6 +22,9 @@ fun sonarSweepTriple(measurements: List<Int>): Int {
     return sonarSweep(measurementSums)
 }
 
+fun sonarSweepWindowedTriple(measurements: List<Int>): Int =
+    sonarSweep(measurements.windowed(3, 1).map { it.sum() })
+
 fun main() {
     val input = InputHelpers.getListOfStringsFromFile("/dayone.txt").map(String::toInt)
 
