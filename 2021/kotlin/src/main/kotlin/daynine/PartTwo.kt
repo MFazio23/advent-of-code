@@ -1,70 +1,46 @@
-package dev.mfazio.aoc.twentyone.dayeight
+package dev.mfazio.aoc.twentyone.daynine
 
 import dev.mfazio.aoc.twentyone.util.InputHelpers
+import kotlin.math.abs
 
-fun sevenSegmentSearchExtra(input: List<String>): Int {
+fun calculateTotalBasinProduct(input: List<String>, basinsToCount: Int): Int {
 
-    val inputPairs = getInputPairs(input)
-
-    val displayNumbers = inputPairs.map { pair ->
-        val digits = getDigits(pair.first)
-
-        val displayDigits = getDisplayDigits(pair.second, digits)
-
-        displayDigits
+    val cave = input.flatMapIndexed { row, rowString ->
+        rowString.mapIndexed { col, value -> Point(row, col, value.digitToInt()) }
     }
 
-    return displayNumbers.sum()
+    val lowPoints = getLowPoints(input)
+
+    return lowPoints.map { startPoint ->
+
+        val checkedPoints = mutableListOf(startPoint)
+        val pointsToCheck = mutableListOf(startPoint)
+
+        while (pointsToCheck.isNotEmpty()) {
+            val point = pointsToCheck.removeFirst()
+            val neighbors = cave.filter { neighbor ->
+                neighbor.isNeighbor(point) &&
+                    neighbor.value != 9 &&
+                    !checkedPoints.contains(neighbor)
+            }
+            checkedPoints.addAll(neighbors)
+            pointsToCheck.addAll(neighbors)
+        }
+
+        checkedPoints.size
+    }.sortedDescending().take(basinsToCount).reduce { total, size -> total * size }
 }
 
-fun getDisplayDigits(displayStrings: List<String>, digits: List<Digit>): Int =
-    displayStrings.joinToString("") { displayString ->
-        (digits.firstOrNull {
-            it.segments.toList().sorted() == displayString.toList().sorted()
-        }?.number ?: -1).toString()
-    }.toInt()
-
-fun getDigits(input: List<String>): List<Digit> = input.map { digitString ->
-    val number = when (digitString.length) {
-        2 -> 1
-        3 -> 7
-        4 -> 4
-        7 -> 8
-        else -> getTrickyDigitNumber(input, digitString)
-    }
-
-    Digit(number, digitString)
-}
-
-fun getTrickyDigitNumber(input: List<String>, digitString: String): Int {
-
-    val nineString = input.first { inputString ->
-        inputString.length == 6 && input.first { it.length == 4 }.all { inputString.contains(it) }
-    }
-
-    return when {
-        nineString == digitString -> 9
-        digitString.length == 6 && input.first { it.length == 3 }.all { digitString.contains(it) } -> 0
-        digitString.length == 6 -> 6
-        digitString.length == 5 && input.first { it.length == 3 }.all { digitString.contains(it) } -> 3
-        digitString.length == 5 && digitString.all { c -> nineString.contains(c) } -> 5
-        digitString.length == 5 -> 2
-        else -> -1
-    }
-}
-
-
-data class Digit(
-    val number: Int,
-    val segments: String,
-) {
-    override fun toString(): String = "$segments: $number"
+data class Point(val row: Int, val col: Int, val value: Int) {
+    fun isNeighbor(point: Point): Boolean =
+        abs(this.row - point.row) + abs(this.col - point.col) == 1
 }
 
 fun main() {
-    val input = InputHelpers.getListOfStringsFromFile("/dayeight.txt")
+    val input = InputHelpers.getListOfStringsFromFile("/daynine.txt")
 
-    val result = sevenSegmentSearchExtra(input)
+    val result = calculateTotalBasinProduct(input, 3)
 
     println(result)
+
 }
