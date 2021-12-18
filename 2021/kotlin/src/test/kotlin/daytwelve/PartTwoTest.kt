@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test
 
 class PartTwoTest {
     @Test
-    fun `Test part two`() {
+    fun `Test get path count with double small cave visits`() {
         val input = InputHelpers.getListOfStringsFromFile("/daytwelve.txt")
 
-        Assertions.assertEquals(195, partTwo(input))
+        Assertions.assertEquals(36, getPathCount(input, 2))
     }
 }

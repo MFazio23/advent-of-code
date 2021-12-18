@@ -2,37 +2,49 @@ package dev.mfazio.aoc.twentyone.daytwelve
 
 import dev.mfazio.aoc.twentyone.util.InputHelpers
 
-fun partOne(input: List<String>): Int {
-    val paths = input.map { inputString -> inputString.split("-") }
-    val points = paths.flatten().distinct().map { PathPoint.fromString(it) }
+fun getPathCount(input: List<String>, smallCaveVisits: Int = 1): Int {
+    val connections = input.map { inputString -> inputString.split("-") }
+    val points = connections.flatten().distinct().map { PathPoint.fromString(it) }
 
     val possibilities = points.associateWith { spot ->
-        paths.mapNotNull { (start, end) ->
+        connections.mapNotNull { (start, end) ->
             when (spot.value) {
-                start -> end
-                end -> start
+                start -> points.firstOrNull { !it.isStartingPoint() && it.value == end }
+                end -> points.firstOrNull { !it.isStartingPoint() && it.value == start }
                 else -> null
             }
         }
     }
+    val startingPoint = points.firstOrNull { it.isStartingPoint() } ?: return -1
 
-    val paths = getPat
+    val paths = getPaths(startingPoint, possibilities, listOf(startingPoint), smallCaveVisits)
 
-    possibilities.get(points.firstOrNull { it.value == "start" })?.
-
-    return -1
+    return paths.size
 }
 
-fun getPath(point: PathPoint, possibilities: List<PathPoint>): List<PathPoint> {
+fun getPaths(point: PathPoint, possibilities: Map<PathPoint, List<PathPoint>>, path: List<PathPoint>, smallCaveVisits: Int): List<List<PathPoint>> {
 
-    return emptyList()
+    if (point.isEndingPoint()) return listOf(path)
+
+    val currentPossibilities =
+        possibilities[point]?.filter { possiblePoint ->
+            possiblePoint.isLarge ||
+                !path.contains(possiblePoint) ||
+                !path.any { point -> path.count { !it.isLarge && it == point } == smallCaveVisits }
+        } ?: emptyList()
+
+    return currentPossibilities.map { newPoint ->
+        getPaths(newPoint, possibilities, path + newPoint, smallCaveVisits)
+    }.flatten()
 }
 
 data class PathPoint(
     val value: String,
     val isLarge: Boolean,
-    var isVisited: Boolean = false,
 ) {
+    fun isStartingPoint() = value == "start"
+    fun isEndingPoint() = value == "end"
+
     companion object {
         fun fromString(input: String) =
             PathPoint(
@@ -40,28 +52,12 @@ data class PathPoint(
                 input == input.uppercase()
             )
     }
-
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (javaClass != other?.javaClass) return false
-
-        other as PathPoint
-
-        return value != other.value
-    }
-
-    override fun hashCode(): Int {
-        var result = value.hashCode()
-        result = 31 * result + isLarge.hashCode()
-        result = 31 * result + isVisited.hashCode()
-        return result
-    }
 }
 
 fun main() {
     val input = InputHelpers.getListOfStringsFromFile("/daytwelve.txt")
 
-    val result = partOne(input)
+    val result = getPathCount(input)
 
     println(result)
 }
