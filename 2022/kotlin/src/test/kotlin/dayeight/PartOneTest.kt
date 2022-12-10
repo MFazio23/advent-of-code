@@ -1,4 +1,4 @@
-package dev.mfazio.aoc.twentytwo.dayone
+package dev.mfazio.aoc.twentytwo.dayeight
 
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 import org.junit.jupiter.api.Assertions.*
@@ -9,10 +9,10 @@ internal class PartOneTest {
     @Test
     fun `Test part one`() {
         assertEquals(
-            24000,
-            getCalorieTotals(
-                this::class.getResourceAsListOfStrings("day-one.txt")
-            ).max()
+            21,
+            funPartOne(
+                this::class.getResourceAsListOfStrings("day-eight.txt")
+            )
         )
     }
 }
