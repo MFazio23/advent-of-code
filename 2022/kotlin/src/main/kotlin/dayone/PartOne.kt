@@ -15,9 +15,9 @@ fun getCalorieTotals(input: List<String>): List<Int> {
     val groups = input.fold(mutableListOf<MutableList<String>>(mutableListOf())) { list, item ->
         list.apply {
             if (item.isBlank()) {
-                    add(mutableListOf())
+                add(mutableListOf())
             } else {
-                    last().add(item)
+                last().add(item)
             }
         }
     }
