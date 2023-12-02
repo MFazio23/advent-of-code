@@ -50,7 +50,7 @@ fun getWindShift(
     rock: Rock,
     currentX: Long,
     currentY: Long,
-    filledPoints: List<Point>
+    filledPoints: Collection<Point>
 ): Int = if (windActions[windStep % windActions.size] == WindAction.Left) {
     if (rock.canMoveLeft(currentX) && !rock.isHittingOtherRocks(currentY, currentX - 1, filledPoints)) -1 else 0
 } else {
@@ -116,7 +116,7 @@ sealed class Rock(
     fun canMoveLeft(currentX: Long) = filledPoints.none { it.x - 1 + currentX < 0 }
     fun canMoveRight(currentX: Long) = filledPoints.none { it.x + 1 + currentX > 6 }
 
-    fun isHittingOtherRocks(offsetY: Long, offsetX: Long, filledPoints: List<Point>) =
+    fun isHittingOtherRocks(offsetY: Long, offsetX: Long, filledPoints: Collection<Point>) =
         getOffsetPoints(offsetY, offsetX).let { offsetRock ->
             val yRange = offsetRock.minOf { it.y }..offsetRock.maxOf { it.y }
             val xRange = offsetRock.minOf { it.x }..offsetRock.maxOf { it.x }

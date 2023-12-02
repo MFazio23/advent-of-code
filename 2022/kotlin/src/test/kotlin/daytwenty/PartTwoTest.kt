@@ -1,18 +1,17 @@
-package dev.mfazio.aoc.twentytwo.daysix
+package dev.mfazio.aoc.twentytwo.daytwenty
 
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 internal class PartTwoTest {
-
-    /*@Test
+    @Test
     fun `Test part two`() {
         assertEquals(
-            45000,
-            funP(
-                this::class.getResourceAsListOfStrings("day-one.txt")
+            2713310158,
+            funPartTwo(
+                this::class.getResourceAsListOfStrings("day-twenty.txt")
             )
         )
-    }*/
+    }
 }

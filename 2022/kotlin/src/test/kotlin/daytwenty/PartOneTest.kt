@@ -1,4 +1,4 @@
-package dev.mfazio.aoc.twentytwo.daytwelve
+package dev.mfazio.aoc.twentytwo.daytwenty
 
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 import org.junit.jupiter.api.Assertions.*
@@ -9,9 +9,9 @@ internal class PartOneTest {
     @Test
     fun `Test part one`() {
         assertEquals(
-            31,
+            3,
             funPartOne(
-                this::class.getResourceAsListOfStrings("day-twelve.txt")
+                this::class.getResourceAsListOfStrings("day-twenty.txt")
             )
         )
     }

@@ -12,12 +12,7 @@ fun funPartOne(input: List<String>, rounds: Int): Long {
     var monkeys = getMonkeys(input)
 
     repeat(rounds) {
-        println("=== === === Round $it === === ===")
         monkeys = takeRound(monkeys)
-    }
-
-    monkeys.values.forEach { monkey ->
-        println("Monkey #${monkey.id} (${monkey.inspectionCount} inspections): ${monkey.items.map { it.worry }}")
     }
 
     val (top, second) = monkeys.values.sortedByDescending { it.inspectionCount }.take(2)
@@ -29,31 +24,17 @@ fun takeRound(monkeys: Map<Int, Monkey>): Map<Int, Monkey> {
     val newMonkeys = monkeys.toMutableMap()
     monkeys.forEach { (id, monkey) ->
         monkey.items.forEach { item ->
-            println("Item=$item")
-            println("BeforeItems=${monkey.items}")
             monkey.inspectionCount++
-            println("StartWorry=${item.worry}")
             item.worry = monkey.operation(item)
-            println("PostOpWorry=${item.worry}")
             item.worry = item.worry / 3
-            println("TestedWorry=${item.worry}")
-            println("Test=${monkey.test(item)}")
             if (monkey.test(item)) {
                 newMonkeys[monkey.trueThrow]?.let { updatedMonkey ->
-                    println("Throw ${item.worry} to Monkey #${updatedMonkey.id}")
                     updatedMonkey.items.add(item)
                 }
             } else {
                 newMonkeys[monkey.falseThrow]?.let { updatedMonkey ->
-                    println("Throw ${item.worry} to Monkey #${updatedMonkey.id}")
                     updatedMonkey.items.add(item)
                 }
-            }
-            println("AfterItems=${monkey.items}")
-            println("FilteredItems=${monkey.items.filter { it.id != item.id }}")
-            //newMonkeys[id] = monkey.copy(items = monkey.items.filter { it.id != item.id })
-            newMonkeys.values.forEach { monkey ->
-                println("Monkey #${monkey.id}: ${monkey.items.map { it.worry }}")
             }
         }
         monkey.items.clear()
