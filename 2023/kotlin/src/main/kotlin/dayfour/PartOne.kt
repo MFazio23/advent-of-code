@@ -21,7 +21,7 @@ fun partOne(input: List<String>): Int = input.sumOf { cardLine ->
 }
 
 fun getCardGroups(cardLine: String): Pair<List<Int>, List<Int>> {
-    val cardParts = cardLine.split(": ")
+    val cardParts = cardLine.split(Regex(":\\s+"))
     val (winnerString, heldString) = cardParts[1].split(" | ")
     val winners = winnerString.split(Regex("\\s+")).filter { it.isNotNullOrEmpty() }.map { it.toInt() }
     val held = heldString.split(Regex("\\s+")).filter { it.isNotNullOrEmpty() }.map { it.toInt() }

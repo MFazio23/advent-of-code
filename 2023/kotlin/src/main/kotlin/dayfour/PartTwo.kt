@@ -13,7 +13,7 @@ fun main() {
 // lol
 var allTotal = 0
 
-fun partTwo(input: List<String>): Int {
+fun partTwoQuick(input: List<String>): Int {
     val cardResults = input.mapIndexed { index, cardLine ->
         val (winners, held) = getCardGroups(cardLine)
 
@@ -41,3 +41,23 @@ fun getTotal(cardResults: Map<Int, Int>, game: Int, total: Int) {
         }
     }
 }
+
+/**
+ * I stole this from Rolando's solution, because it's way better than mine.
+ * I then made it more my style, but he still deserves the credit.
+ */
+fun partTwo(input: List<String>): Int =
+    input.mapIndexed { index, cardLine ->
+        val (winners, held) = getCardGroups(cardLine)
+
+        val winnerCount = winners.intersect(held.toSet()).count()
+
+        index to winnerCount
+    }.fold(MutableList(input.size) { 1 }) { totals, (game, result) ->
+        if (result > 0) {
+            (1..result).forEach { ind ->
+                totals[game + ind] += totals[game]
+            }
+        }
+        totals
+    }.sum()

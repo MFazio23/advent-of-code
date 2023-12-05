@@ -16,4 +16,14 @@ internal class PartTwoTest {
 
         assertEquals(expected, result)
     }
+    @Test
+    fun `Test part two quick`() {
+        val expected = 30
+
+        val result = partTwoQuick(
+            this::class.getResourceAsListOfStrings("day-four.txt")
+        )
+
+        assertEquals(expected, result)
+    }
 }
