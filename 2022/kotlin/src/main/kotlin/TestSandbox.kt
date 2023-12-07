@@ -7,17 +7,12 @@ import kotlin.math.roundToInt
 // Also, it keeps my package names in line.
 
 fun main() {
-    val a = Route("A", 4, "")
-    val b = Route("B", 7, "")
+    val values = listOf(3, 4, 6, 10)
 
-    println(a + b)
+    val total = values.sum()
+
+    val reduceTotal = values.reduce { acc, i -> acc + i }
+
+    println("Total=$total")
+    println("RTotal=$reduceTotal")
 }
-
-data class Route(
-    val name: String,
-    val miles: Int,
-    val notes: String,
-) {
-}
-
-operator fun Route.plus(otherRoute: Route) = "${this.miles + otherRoute.miles} miles"

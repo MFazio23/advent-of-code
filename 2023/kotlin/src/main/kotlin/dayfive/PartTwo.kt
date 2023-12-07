@@ -30,27 +30,25 @@ fun partTwo(input: List<String>): Long {
     return ranges.minOf { (start, _) -> start }
 }
 
-fun FullMap.mapRanges(ranges: List<Pair<Long, Long>>): List<Pair<Long, Long>> {
-    return listOf(
-        this.seedToSoil,
-        this.soilToFertilizer,
-        this.fertilizerToWater,
-        this.waterToLight,
-        this.lightToTemperature,
-        this.temperatureToHumidity,
-        this.humidityToLocation
-    ).fold(ranges) { currentRanges, fullMaps  ->
-        currentRanges.map { (start, end) ->
-            fullMaps.map { fullMap ->
-                fullMap.mapRangeToItem(start, end)
-            }.flatten().distinct()
-        }.flatten().map { (start, end) ->
-            val mappings = fullMaps.mapNotNull { fullMap ->
-                fullMap.mapSourceToDestination(start, end)
-            }.distinct()
-            mappings.ifEmpty { listOf(start to end) }
-        }.flatten()
-    }
+fun FullMap.mapRanges(ranges: List<Pair<Long, Long>>): List<Pair<Long, Long>> = listOf(
+    this.seedToSoil,
+    this.soilToFertilizer,
+    this.fertilizerToWater,
+    this.waterToLight,
+    this.lightToTemperature,
+    this.temperatureToHumidity,
+    this.humidityToLocation
+).fold(ranges) { currentRanges, fullMaps  ->
+    currentRanges.map { (start, end) ->
+        fullMaps.map { fullMap ->
+            fullMap.mapRangeToItem(start, end)
+        }.flatten().distinct()
+    }.flatten().map { (start, end) ->
+        val mappings = fullMaps.mapNotNull { fullMap ->
+            fullMap.mapSourceToDestination(start, end)
+        }.distinct()
+        mappings.ifEmpty { listOf(start to end) }
+    }.flatten()
 }
 
 fun MapItem.mapRangeToItem(start: Long, end: Long): List<Pair<Long, Long>> = listOfNotNull(

@@ -16,7 +16,7 @@ fun partOne(input: List<String>): Int {
     val distanceList = input.last().split("\\s+".toRegex()).drop(1).map { it.toLong() }
 
     return timeList.zip(distanceList).map { (time, distance) ->
-        (1..time).filter { holdLength ->
+        (1 until time).filter { holdLength ->
             (time - holdLength) * holdLength > distance
         }.size
     }.reduce { acc, i -> acc * i }

@@ -29,7 +29,7 @@ fun partTwo(input: List<String>) = input.sumOf { line ->
             if (firstCharacter.isDigit()) {
                 firstCharacter.digitToInt()
             } else {
-                numberMap.filter { (word, number) -> window.startsWith(word, true) }.values.firstOrNull()
+                numberMap.filter { (word, _) -> window.startsWith(word, true) }.values.firstOrNull()
             }
         }
     }.let { result -> "${result.first()}${result.last()}".toInt() }
