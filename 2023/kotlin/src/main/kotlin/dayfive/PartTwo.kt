@@ -1,13 +1,18 @@
 package dev.mfazio.aoc.twentythree.dayfive
 
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
+import kotlin.system.measureTimeMillis
 
 fun main() {
-    println(
-        partTwo(
-            getResourceAsListOfStrings("day-five.txt")
+    measureTimeMillis {
+        println(
+            partTwo(
+                getResourceAsListOfStrings("day-five.txt")
+            )
         )
-    )
+    }.also {
+        println("Time taken: $it ms")
+    }
 }
 
 fun partTwo(input: List<String>): Long {
