@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("com.github.MFazio23:fazio-utils-jvm:1.0.7")
+    implementation("dev.mfazio:fazio-utils-jvm:1.0.7")
 
     testImplementation(platform("org.junit:junit-bom:5.9.0"))
     testImplementation(kotlin("test"))

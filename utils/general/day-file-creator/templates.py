@@ -4,7 +4,6 @@ import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 import kotlin.system.measureTimeMillis
 
 fun main() {{
-
     measureTimeMillis {{
         println(
             {partFunction}(
@@ -31,7 +30,7 @@ import org.junit.jupiter.api.Test
 internal class {partName}Test {{
 
     @Test
-    fun `Test part one`() {{
+    fun `Test part {partNumber}`() {{
         val expected = 0
 
         val result = {partFunction}(

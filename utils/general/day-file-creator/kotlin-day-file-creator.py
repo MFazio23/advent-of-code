@@ -41,8 +41,8 @@ def get_part_text(year, day):
     return {
         "PartOne": part_template.format(partFunction="partOne", year=year, day=day),
         "PartTwo": part_template.format(partFunction="partTwo", year=year, day=day),
-        "PartOneTest": part_test_template.format(partName="PartOne", partFunction="partOne", year=year, day=day),
-        "PartTwoTest": part_test_template.format(partName="PartTwo", partFunction="partTwo", year=year, day=day),
+        "PartOneTest": part_test_template.format(partName="PartOne", partFunction="partOne", partNumber="one", year=year, day=day),
+        "PartTwoTest": part_test_template.format(partName="PartTwo", partFunction="partTwo", partNumber="two", year=year, day=day),
     }
 
 print("Creating day file...")
