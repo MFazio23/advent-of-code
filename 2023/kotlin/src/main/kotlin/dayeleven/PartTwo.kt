@@ -9,7 +9,7 @@ import kotlin.system.measureTimeMillis
 fun main() {
     measureTimeMillis {
         println(
-            partTwo(
+            totalPathDistanceWithExpandedGalaxies(
                 getResourceAsListOfStrings("day-eleven.txt"),
                 1_000_000
             )

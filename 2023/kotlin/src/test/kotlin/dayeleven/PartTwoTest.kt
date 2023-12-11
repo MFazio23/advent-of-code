@@ -10,7 +10,7 @@ internal class PartTwoTest {
     fun `Test part two 10`() {
         val expected = 1030L
 
-        val result = partTwo(
+        val result = totalPathDistanceWithExpandedGalaxies(
             this::class.getResourceAsListOfStrings("day-eleven.txt"),
             10
         )
@@ -22,7 +22,7 @@ internal class PartTwoTest {
     fun `Test part two 100`() {
         val expected = 8410L
 
-        val result = partTwo(
+        val result = totalPathDistanceWithExpandedGalaxies(
             this::class.getResourceAsListOfStrings("day-eleven.txt"),
             100
         )

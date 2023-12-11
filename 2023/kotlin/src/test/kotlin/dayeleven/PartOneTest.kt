@@ -8,10 +8,11 @@ internal class PartOneTest {
 
     @Test
     fun `Test part one`() {
-        val expected = 374
+        val expected = 374L
 
-        val result = partOne(
-            this::class.getResourceAsListOfStrings("day-eleven.txt")
+        val result = totalPathDistanceWithExpandedGalaxies(
+            this::class.getResourceAsListOfStrings("day-eleven.txt"),
+            2
         )
 
         assertEquals(expected, result)
