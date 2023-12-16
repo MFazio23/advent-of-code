@@ -41,11 +41,11 @@ fun findPointsFromInput(input: List<String>): List<Point<String>> = input.mapInd
     }
 }.flatten()
 
-fun <T> findPaths(points: List<Point<T>>): List<List<Point<T>>> {
-    val startingPoint = points.first { it.data == "S" }
+fun <T> findPaths(points: List<Point<T>>, startingPoint: Point<T>? = null): List<List<Point<T>>> {
+    val start = startingPoint ?: points.first { it.data == "S" }
 
-    val paths = startingPoint.findAdjacentPipes(points)?.map {  point ->
-        findPath(startingPoint, point, points)
+    val paths = start.findAdjacentPipes(points)?.map {  point ->
+        findPath(start, point, points)
     }
 
     return paths ?: emptyList()

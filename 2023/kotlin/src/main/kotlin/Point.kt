@@ -22,4 +22,19 @@ data class Point<T>(
 
     fun getAdjacentPoints(points: List<Point<T>>?): List<Point<T>> =
         points?.filter { this.isAdjacent(it) } ?: emptyList()
+
+    fun getBasicNeighbors(points: List<Point<T>>?): Map<NeighborType, Point<T>?> =
+        mapOf(
+            NeighborType.Top to points?.firstOrNull { it.x == this.x && it.y == this.y - 1 },
+            NeighborType.Bottom to points?.firstOrNull { it.x == this.x && it.y == this.y + 1 },
+            NeighborType.Left to points?.firstOrNull { it.x == this.x - 1 && it.y == this.y },
+            NeighborType.Right to points?.firstOrNull { it.x == this.x + 1 && it.y == this.y },
+        )
+}
+
+enum class NeighborType {
+    Top,
+    Bottom,
+    Left,
+    Right,
 }
