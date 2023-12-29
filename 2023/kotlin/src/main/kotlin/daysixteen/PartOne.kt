@@ -9,7 +9,7 @@ fun main() {
     measureTimeMillis {
         println(
             partOne(
-                getResourceAsListOfStrings("day-sixteen.txt")
+                getResourceAsListOfStrings("day-sixteen-rolando.txt")
             )
         )
     }.also {
