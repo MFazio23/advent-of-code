@@ -1,6 +1,6 @@
 import argparse
 import os
-from templates import part_template, part_test_template
+from kotlin_templates import part_template, part_test_template
 
 base_path = './../../..'
 
