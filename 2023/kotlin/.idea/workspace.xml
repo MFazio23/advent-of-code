@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="advent-of-code-2023-kotlin" />
+      <module name="advent-of-code-2023-kotlin.test" />
+      <module name="advent-of-code-2023-kotlin.main" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4c9ce661-f5cc-48a8-b309-8a8bef72e178" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/main/kotlin/TestSandbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/main/kotlin/dayone/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/main/kotlin/dayone/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/main/kotlin/daytwo/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/main/kotlin/daytwo/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/main/resources/day-one.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/main/resources/day-three.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/main/resources/day-two.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/test/kotlin/TestSandbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/test/kotlin/dayone/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/test/kotlin/dayone/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/test/kotlin/daytwo/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/test/kotlin/daytwo/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2018/kotlin/src/test/resources/day-one.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/src/main/kotlin/Util.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/src/main/kotlin/nineteen/dayone/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/src/main/kotlin/nineteen/dayone/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2019/kotlin/src/main/resources/dev/mfazio/aoc/nineteen/dayone/day-one-input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/kotlin/TestSandbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/kotlin/dayone/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/kotlin/dayone/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/kotlin/daythree/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/kotlin/daytwo/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/kotlin/daytwo/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/kotlin/util/InputHelpers.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/resources/dayone.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/main/resources/daytwo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/test/kotlin/TestSandbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/test/kotlin/dayone/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/test/kotlin/dayone/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/test/kotlin/daytwo/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2020/kotlin/src/test/kotlin/daytwo/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/TestSandbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayeight/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayeight/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayeleven/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayeleven/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayfifteen/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayfifteen/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayfive/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayfive/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayfour/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayfour/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daynine/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daynine/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayone/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayone/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayseven/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayseven/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daysix/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daysix/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayten/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/dayten/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daythirteen/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daythirteen/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daythree/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daythree/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daytwelve/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daytwelve/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daytwo/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/daytwo/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/util/Extensions.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/kotlin/util/InputHelpers.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/dayeight.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/dayeleven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/dayfifteen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/dayfive.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/dayfour.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/daynine.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/dayone.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/dayseven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/daysix.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/dayten.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/daythirteen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/daythree.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/daytwelve.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/main/resources/daytwo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/TestSandbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayeight/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayeight/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayeleven/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayeleven/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayfifteen/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayfifteen/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayfive/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayfive/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayfour/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayfour/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daynine/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daynine/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayone/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayone/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayseven/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayseven/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daysix/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daysix/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayten/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/dayten/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daythirteen/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daythirteen/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daythree/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daythree/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daytwelve/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daytwelve/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daytwo/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/kotlin/daytwo/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayeight.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayeleven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayfifteen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayfive-full.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayfive.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayfour.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/daynine-small.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/daynine.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayseven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/daysix.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayten-corrupted.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayten-incomplete.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/dayten.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/daythirteen-full.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/daythirteen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/daythree.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/daytwelve.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2021/kotlin/src/test/resources/daytwo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/TestSandbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayeight/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayeight/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayeleven/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayeleven/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayfive/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayfive/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayfour/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayfour/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daynine/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daynine/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayone/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayone/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayseven/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayseven/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayseventeen/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayseventeen/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daysix/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daysix/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayten/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/dayten/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daythree/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daythree/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daytwelve/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daytwelve/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daytwenty/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daytwenty/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daytwentyfive/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daytwentyfive/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daytwo/PartOne.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/daytwo/PartTwo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/kotlin/util/InputHelpers.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-eight.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-eleven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-five.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-four.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-nine.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-one.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-seven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-seventeen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-six.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-ten.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-three.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-twelve.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-twenty.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-twentyfive.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/main/resources/day-two.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/TestSandbox.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayeight/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayeight/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayeleven/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayeleven/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daynine/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daynine/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayone/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayone/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayseven/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayseven/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayseventeen/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayseventeen/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daysix/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daysix/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayten/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/dayten/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daytwelve/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daytwelve/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daytwenty/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daytwenty/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daytwentyfive/PartOneTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/kotlin/daytwentyfive/PartTwoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-eight.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-eleven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-nine-part-two.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-nine.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-one.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-seven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-seventeen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-six.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-ten.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-twelve.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-twenty.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-twentyfive.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/kotlin/src/test/resources/day-two.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/day-one.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-eight.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-eleven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-five.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-four.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-nine.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-one.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-seven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-seventeen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-six.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-ten.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-three.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/inputs/day-two.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2022/python/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kotlin/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../../utils/jvm">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="advent-of-code-2023-kotlin" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.20/e986a95d49898518c4e736748455e3eacddb2e7e/kotlin-stdlib-1.9.20-sources.jar!/commonMain/generated/_Maps.kt" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2YtyEwpxSXyPQmeRU5uv5NqEH1i" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build kotlin.executor": "Run",
+    "Gradle.PartOneTest.Test part one (1).executor": "Run",
+    "Gradle.PartOneTest.Test part one complex-er.executor": "Run",
+    "Gradle.PartOneTest.Test part one complex.executor": "Run",
+    "Gradle.PartOneTest.Test part one longer.executor": "Run",
+    "Gradle.PartOneTest.Test part one mist.executor": "Run",
+    "Gradle.PartOneTest.Test part one super small mist.executor": "Run",
+    "Gradle.PartOneTest.Test part one super small.executor": "Run",
+    "Gradle.PartOneTest.Test part one.executor": "Run",
+    "Gradle.PartOneTest.executor": "Run",
+    "Gradle.PartTwoTest (1).executor": "Run",
+    "Gradle.PartTwoTest.Test part one.executor": "Run",
+    "Gradle.PartTwoTest.Test part two (1).executor": "Run",
+    "Gradle.PartTwoTest.Test part two 100.executor": "Run",
+    "Gradle.PartTwoTest.Test part two larger.executor": "Run",
+    "Gradle.PartTwoTest.Test part two largerer.executor": "Run",
+    "Gradle.PartTwoTest.Test part two simple.executor": "Run",
+    "Gradle.PartTwoTest.Test part two squish.executor": "Run",
+    "Gradle.PartTwoTest.Test part two with fifteen cycles.executor": "Run",
+    "Gradle.PartTwoTest.Test part two with three cycles.executor": "Run",
+    "Gradle.PartTwoTest.Test part two with twenty-seven cycles.executor": "Run",
+    "Gradle.PartTwoTest.Test part two with two cycles.executor": "Run",
+    "Gradle.PartTwoTest.Test part two.executor": "Run",
+    "Gradle.PartTwoTest.executor": "Run",
+    "Kotlin.PartOneKt (1).executor": "Run",
+    "Kotlin.PartOneKt (2).executor": "Run",
+    "Kotlin.PartOneKt.executor": "Run",
+    "Kotlin.PartTwoKt (1).executor": "Run",
+    "Kotlin.PartTwoKt (2).executor": "Run",
+    "Kotlin.PartTwoKt.executor": "Run",
+    "Kotlin.TestSandboxKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "folder-refactor",
+    "kotlin-language-version-configured": "true",
+    "last.edited.regexp": "dpf=4",
+    "last_opened_file_path": "/Users/michael.fazio/Development/Code/Fazio/advent-of-code/2023/kotlin/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/test/kotlin" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/../../utils/jvm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="dev.mfazio.aoc.twentythree" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.PartOneTest.Test part one (1)">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="519083aa-9771-4616-9d9c-91a1421af1d2" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PartOneTest.Test part one (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;dev.mfazio.aoc.twentythree.daytwentyfive.PartOneTest.Test part one&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PartOneTest.Test part one super small mist" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;dev.mfazio.aoc.twentythree.dayseventeen.PartOneTest.Test part one super small mist&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PartOneTest.Test part one super small" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;dev.mfazio.aoc.twentythree.dayseventeen.PartOneTest.Test part one super small&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PartOneTest.Test part one" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;dev.mfazio.aoc.twentythree.dayseventeen.PartOneTest.Test part one&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PartOneKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.mfazio.aoc.twentythree.daytwentyfive.PartOneKt" />
+      <module name="advent-of-code-2023-kotlin.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="kotlin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="kotlin" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PartOneTest.Test part one (1)" />
+        <item itemvalue="Kotlin.PartOneKt" />
+        <item itemvalue="Gradle.PartOneTest.Test part one super small" />
+        <item itemvalue="Gradle.PartOneTest.Test part one" />
+        <item itemvalue="Gradle.PartOneTest.Test part one super small mist" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-3183f394aec4-22f8fbaa" />
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-5f3ff201" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c9ce661-f5cc-48a8-b309-8a8bef72e178" name="Changes" comment="" />
+      <created>1701359062713</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701359062713</updated>
+      <workItem from="1701359063760" duration="96000" />
+      <workItem from="1701359169223" duration="40000" />
+      <workItem from="1701359215520" duration="925000" />
+      <workItem from="1701406099828" duration="24551000" />
+      <workItem from="1701612235989" duration="25037000" />
+      <workItem from="1701755361371" duration="59000" />
+      <workItem from="1701755429140" duration="18674000" />
+      <workItem from="1701904099467" duration="4371000" />
+      <workItem from="1701912199893" duration="16208000" />
+      <workItem from="1702007431016" duration="20566000" />
+      <workItem from="1702186622989" duration="2498000" />
+      <workItem from="1702189134051" duration="54108000" />
+      <workItem from="1702569135896" duration="81725000" />
+      <workItem from="1702668883207" duration="183000" />
+      <workItem from="1702669075743" duration="198000" />
+      <workItem from="1702669282823" duration="40157000" />
+      <workItem from="1702928902523" duration="4224000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnloadedModulesList">
+    <module name="fazio-utils-aoc-jvm" />
+    <module name="fazio-utils-aoc-jvm.lib" />
+    <module name="fazio-utils-aoc-jvm.lib.main" />
+    <module name="fazio-utils-aoc-jvm.lib.test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/dayfourteen/PartTwo.kt</url>
+          <line>122</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/daytwentyfive/PartOne.kt</url>
+          <line>26</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="endGrids.keys.first()" language="kotlin" />
+        <watch expression="(cycles - 1) % endGrids.values.distinct().size" language="kotlin" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

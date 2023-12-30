@@ -14,6 +14,11 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "advent-of-code-kotlin"
+include("advent-of-code-2018")
+include("advent-of-code-2019")
+include("advent-of-code-2020")
+include("advent-of-code-2021")
+include("advent-of-code-2022")
 include("advent-of-code-2023")
 include("advent-of-code-shared")
 include("advent-of-code-dependencies")
