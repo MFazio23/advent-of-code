@@ -75,7 +75,7 @@ data class RiskPoint(
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayfifteen.txt")
+    val input = getResourceAsListOfStrings("dayfifteen.txt")
 
     val result = findLeastRiskyPath(input)
 

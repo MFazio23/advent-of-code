@@ -3,7 +3,7 @@ package dev.mfazio.aoc.twentytwo.dayone
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 
 fun main() {
-    val input = getResourceAsListOfStrings("/day-one.txt")
+    val input = getResourceAsListOfStrings("day-one.txt")
 
     println(getCalorieTotals(input).max())
 }

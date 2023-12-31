@@ -8,7 +8,7 @@ internal class PartTwoTest {
 
     @Test
     fun `Test efficient lanternfish count for 5 days`() {
-        val input = getResourceAsListOfStrings("/daysix.txt")
+        val input = getResourceAsListOfStrings("daysix.txt")
 
         input.firstOrNull()?.let { fishList ->
             Assertions.assertEquals(10, getEfficientLanternfishCount(fishList, 5))
@@ -17,7 +17,7 @@ internal class PartTwoTest {
 
     @Test
     fun `Test efficient lanternfish count for 18 days`() {
-        val input = getResourceAsListOfStrings("/daysix.txt")
+        val input = getResourceAsListOfStrings("daysix.txt")
 
         input.firstOrNull()?.let { fishList ->
             Assertions.assertEquals(26, getEfficientLanternfishCount(fishList, 18))
@@ -26,7 +26,7 @@ internal class PartTwoTest {
 
     @Test
     fun `Test efficient lanternfish count for 80 days`() {
-        val input = getResourceAsListOfStrings("/daysix.txt")
+        val input = getResourceAsListOfStrings("daysix.txt")
 
         input.firstOrNull()?.let { fishList ->
             Assertions.assertEquals(5934, getEfficientLanternfishCount(fishList, 80))
@@ -35,7 +35,7 @@ internal class PartTwoTest {
 
     @Test
     fun `Test efficient lanternfish count for 256 days`() {
-        val input = getResourceAsListOfStrings("/daysix.txt")
+        val input = getResourceAsListOfStrings("daysix.txt")
 
         input.firstOrNull()?.let { fishList ->
             Assertions.assertEquals(26984457539L, getEfficientLanternfishCount(fishList, 256))

@@ -25,7 +25,7 @@ fun giantSquidBingoLoser(input: List<String>): Int {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayfour.txt")
+    val input = getResourceAsListOfStrings("dayfour.txt")
 
     val result = giantSquidBingoLoser(input)
 

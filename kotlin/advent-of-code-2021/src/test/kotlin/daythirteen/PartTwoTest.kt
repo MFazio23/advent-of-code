@@ -9,11 +9,11 @@ class PartTwoTest {
     // I'm just using a unit test suite to test multiple data sources.
     @Test
     fun `Test display after folding`() {
-        getResourceAsListOfStrings("/daythirteen.txt")
+        getResourceAsListOfStrings("daythirteen.txt")
     }
 
     @Test
     fun `Test full display after folding`() {
-        getResourceAsListOfStrings("/daythirteen-full.txt")
+        getResourceAsListOfStrings("daythirteen-full.txt")
     }
 }

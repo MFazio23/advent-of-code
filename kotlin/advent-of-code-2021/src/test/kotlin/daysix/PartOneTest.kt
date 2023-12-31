@@ -10,7 +10,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test lanternfish count for 5 days`() {
-        val input = getResourceAsListOfStrings("/daysix.txt")
+        val input = getResourceAsListOfStrings("daysix.txt")
 
         input.firstOrNull()?.let { fishList ->
             assertEquals(10, getLanternfishCount(fishList, 5))
@@ -19,7 +19,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test lanternfish count for 18 days`() {
-        val input = getResourceAsListOfStrings("/daysix.txt")
+        val input = getResourceAsListOfStrings("daysix.txt")
 
         input.firstOrNull()?.let { fishList ->
             assertEquals(26, getLanternfishCount(fishList, 18))
@@ -28,7 +28,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test lanternfish count for 80 days`() {
-        val input = getResourceAsListOfStrings("/daysix.txt")
+        val input = getResourceAsListOfStrings("daysix.txt")
 
         input.firstOrNull()?.let { fishList ->
             assertEquals(5934, getLanternfishCount(fishList, 80))

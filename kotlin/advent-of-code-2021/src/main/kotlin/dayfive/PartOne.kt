@@ -64,7 +64,7 @@ data class HydrothermalVent(
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayfive.txt")
+    val input = getResourceAsListOfStrings("dayfive.txt")
 
     val result = hydrothermalVenture(input)
 

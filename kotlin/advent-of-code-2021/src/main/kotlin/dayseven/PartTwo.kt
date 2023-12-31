@@ -23,7 +23,7 @@ fun calculateExpensiveCrabFuel(input: List<String>): Int {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayseven.txt")
+    val input = getResourceAsListOfStrings("dayseven.txt")
 
     input.firstOrNull()?.split(",")?.let { inputValues ->
 

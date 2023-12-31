@@ -5,9 +5,9 @@ plugins {
 group = "dev.mfazio.aoc"
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
-
     implementation(Deps.fazioUtilsJvm)
+    
+    testImplementation(Deps.kotlinTest)
 }
 
 tasks.test {

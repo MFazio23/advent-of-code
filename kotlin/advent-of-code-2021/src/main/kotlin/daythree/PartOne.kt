@@ -20,7 +20,7 @@ fun diagnostic(input: List<String>): Int {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daythree.txt")
+    val input = getResourceAsListOfStrings("daythree.txt")
 
     val result = diagnostic(input)
 

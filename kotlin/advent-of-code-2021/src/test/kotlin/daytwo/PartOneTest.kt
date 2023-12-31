@@ -8,7 +8,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test dive results`() {
-        val testValues = getResourceAsListOfStrings("/daytwo.txt")
+        val testValues = getResourceAsListOfStrings("daytwo.txt")
         Assertions.assertEquals(
             150,
             dive(testValues)

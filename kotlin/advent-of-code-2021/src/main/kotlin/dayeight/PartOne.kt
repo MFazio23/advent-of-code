@@ -12,7 +12,7 @@ fun getInputPairs(input: List<String>) = input.map { line ->
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayeight.txt")
+    val input = getResourceAsListOfStrings("dayeight.txt")
 
     val result = sevenSegmentSearch(input)
 

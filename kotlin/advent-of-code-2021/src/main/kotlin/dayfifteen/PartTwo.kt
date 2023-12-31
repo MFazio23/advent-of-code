@@ -53,7 +53,7 @@ fun findLeastRiskyPathInFiveX(input: List<String>): Int {
 
 fun main() {
     val timing = measureTimeMillis {
-        val input = getResourceAsListOfStrings("/dayfifteen.txt")
+        val input = getResourceAsListOfStrings("dayfifteen.txt")
 
         val result = findLeastRiskyPathInFiveX(input)
 

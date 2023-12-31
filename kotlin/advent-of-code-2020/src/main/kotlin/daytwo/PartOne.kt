@@ -39,7 +39,7 @@ private data class PasswordEntry(
 }
 
 fun main() {
-    val inputs = getResourceAsListOfStrings("/daytwo.txt")
+    val inputs = getResourceAsListOfStrings("daytwo.txt")
 
     println("Result = ${passwordPhilosophy(inputs)}")
 }

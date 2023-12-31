@@ -42,7 +42,7 @@ fun getAllFlashStep(input: List<String>): Int {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayeleven.txt")
+    val input = getResourceAsListOfStrings("dayeleven.txt")
 
     val result = getAllFlashStep(input)
 

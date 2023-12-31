@@ -59,7 +59,7 @@ data class Octopus(
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayeleven.txt")
+    val input = getResourceAsListOfStrings("dayeleven.txt")
 
     val result = getFlashCount(input, 100)
 

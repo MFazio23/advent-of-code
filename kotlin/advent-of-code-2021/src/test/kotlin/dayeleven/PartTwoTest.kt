@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 class PartTwoTest {
     @Test
     fun `Test all flash`() {
-        val input = getResourceAsListOfStrings("/dayeleven.txt")
+        val input = getResourceAsListOfStrings("dayeleven.txt")
 
         Assertions.assertEquals(195, getAllFlashStep(input))
     }

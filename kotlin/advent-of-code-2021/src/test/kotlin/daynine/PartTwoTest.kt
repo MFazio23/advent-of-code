@@ -8,14 +8,14 @@ internal class PartTwoTest {
 
     @Test
     fun `Test multiplied total basin factor from small dataset`() {
-        val input = getResourceAsListOfStrings("/daynine-small.txt")
+        val input = getResourceAsListOfStrings("daynine-small.txt")
 
         assertEquals(1134, calculateTotalBasinProduct(input, 3))
     }
 
     @Test
     fun `Test multiplied total basin factor`() {
-        val input = getResourceAsListOfStrings("/daynine.txt")
+        val input = getResourceAsListOfStrings("daynine.txt")
 
         assertEquals(1134, calculateTotalBasinProduct(input, 3))
     }

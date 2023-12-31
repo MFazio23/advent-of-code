@@ -6,6 +6,7 @@ import dev.mfazio.aoc.shared.types.printPoints
 import dev.mfazio.aoc.twentythree.daysixteen.Direction
 import dev.mfazio.utils.extensions.filterNotNullValues
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
+import dev.mfazio.utils.extensions.orZero
 import java.util.*
 import kotlin.system.measureTimeMillis
 
@@ -76,21 +77,21 @@ fun shortestPath(
         }?.let { (direction, endPoint) ->
             seenHeatLossPoints += PointHeatLoss(
                 point = endPoint,
-                heatLoss = nextPoint.heatLoss + endPoint.data,
+                heatLoss = nextPoint.heatLoss + endPoint.data.orZero(),
                 path = nextPoint.path + direction
             ).also {
                 println(it)
             }
             println()
-            points.printPoints(seenHeatLossPoints.toList())
-            return nextPoint.heatLoss + endPoint.data
+            points.printPoints()
+            return nextPoint.heatLoss + endPoint.data.orZero()
         }
         val nextNeighbors = neighbors
             .filterNotNullValues()
             .map { (direction, point) ->
                 PointHeatLoss(
                     point = point,
-                    heatLoss = nextPoint.heatLoss + point.data,
+                    heatLoss = nextPoint.heatLoss + point.data.orZero(),
                     path = nextPoint.path + direction
                 )
             }
@@ -112,29 +113,4 @@ data class PointHeatLoss(
     val path: List<Direction>
 ) : Comparable<PointHeatLoss> {
     override fun compareTo(other: PointHeatLoss): Int = this.heatLoss.compareTo(other.heatLoss)
-}
-
-fun <T> List<Point<T>>.printPoints(seenPoints: List<PointHeatLoss>) {
-    val maxX = this.maxOfOrNull { it.x } ?: run {
-        println("No max 'X' found")
-        return
-    }
-    val maxY = this.maxOfOrNull { it.y } ?: run {
-        println("No max 'Y' found")
-        return
-    }
-
-    (0..maxY).forEach { y ->
-        (0..maxX).forEach { x ->
-            val point = this.firstOrNull { it.x == x && it.y == y }
-
-            val data = if (seenPoints.any { (seenPoint, _, _) -> seenPoint == point }) {
-                "X"
-            } else {
-                point?.data?.toString() ?: "."
-            }
-            print(data)
-        }
-        println()
-    }
 }

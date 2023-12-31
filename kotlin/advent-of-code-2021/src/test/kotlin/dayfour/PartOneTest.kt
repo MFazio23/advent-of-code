@@ -9,7 +9,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test giant squid bingo test data`() {
-        val testValues = getResourceAsListOfStrings("/dayfour.txt")
+        val testValues = getResourceAsListOfStrings("dayfour.txt")
 
         val result = giantSquidBingo(testValues)
 

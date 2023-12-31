@@ -10,7 +10,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test seven segment search - 1, 4, 7, 8`() {
-        val input = getResourceAsListOfStrings("/dayeight.txt")
+        val input = getResourceAsListOfStrings("dayeight.txt")
 
         assertEquals(26, sevenSegmentSearch(input))
     }

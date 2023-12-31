@@ -75,7 +75,9 @@ fun findReflection(
 
         val differences = firstRows.map { (ind, firstPoints) ->
             secondRows[ind]?.let { secondPoints ->
-                firstPoints.joinToString("") { it.data } to secondPoints.reversed().joinToString("") { it.data }
+                firstPoints.joinToString("") {
+                    it.data.orEmpty() } to secondPoints.reversed().joinToString("") { it.data.orEmpty()
+                }
             }?.let { (first, second) ->
                 first.zip(second).count { (f, s) -> f != s }
             } ?: 0

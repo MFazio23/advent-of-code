@@ -51,7 +51,7 @@ fun BingoBoard.getScore(pickedNumbers: List<Int>) =
     this.flatten().filter { !pickedNumbers.contains(it) }.sum() * (pickedNumbers.lastOrNull() ?: 0)
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayfour.txt")
+    val input = getResourceAsListOfStrings("dayfour.txt")
 
     val result = giantSquidBingo(input)
 

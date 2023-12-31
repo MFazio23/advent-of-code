@@ -8,7 +8,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test total risk factor`() {
-        val input = getResourceAsListOfStrings("/daynine.txt")
+        val input = getResourceAsListOfStrings("daynine.txt")
 
         assertEquals(15, calculateTotalRiskLevel(input))
     }

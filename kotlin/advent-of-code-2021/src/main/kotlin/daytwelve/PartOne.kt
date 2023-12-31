@@ -55,7 +55,7 @@ data class PathPoint(
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daytwelve.txt")
+    val input = getResourceAsListOfStrings("daytwelve.txt")
 
     val result = getPathCount(input)
 

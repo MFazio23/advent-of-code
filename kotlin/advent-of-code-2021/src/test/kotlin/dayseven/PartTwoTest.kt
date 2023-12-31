@@ -8,7 +8,7 @@ internal class PartTwoTest {
 
     @Test
     fun `Test something`() {
-        val input = getResourceAsListOfStrings("/dayseven.txt")
+        val input = getResourceAsListOfStrings("dayseven.txt")
 
         input.firstOrNull()?.split(",")?.let { inputValues ->
 

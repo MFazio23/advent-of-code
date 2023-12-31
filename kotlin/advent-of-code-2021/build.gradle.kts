@@ -9,7 +9,7 @@ dependencies {
     implementation(project(":advent-of-code-shared"))
     implementation(Deps.fazioUtilsJvm)
 
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation(Deps.kotlinTest)
 }
 
 tasks.test {

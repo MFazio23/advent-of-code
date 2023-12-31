@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 internal class PartTwoTest {
     @Test
     fun `Test calculate incomplete syntax lines score`() {
-        val input = getResourceAsListOfStrings("/dayten.txt")
+        val input = getResourceAsListOfStrings("dayten.txt")
 
         Assertions.assertEquals(288957, calculateSyntaxIncompleteLineScore(input))
     }

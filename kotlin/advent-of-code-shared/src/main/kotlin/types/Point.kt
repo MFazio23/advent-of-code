@@ -1,7 +1,7 @@
 package dev.mfazio.aoc.shared.types
 
 data class Point<T>(
-    val data: T,
+    val data: T? = null,
     val x: Int,
     val y: Int,
 ) {

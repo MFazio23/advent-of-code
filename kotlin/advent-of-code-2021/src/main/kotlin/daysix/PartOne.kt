@@ -25,7 +25,7 @@ fun getLanternfishCount(input: String, days: Int): Int {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daysix.txt")
+    val input = getResourceAsListOfStrings("daysix.txt")
 
     input.firstOrNull()?.let { fishList ->
         val result = getLanternfishCount(fishList, 80)

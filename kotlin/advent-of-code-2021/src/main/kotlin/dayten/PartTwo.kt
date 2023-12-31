@@ -32,7 +32,7 @@ fun calculateSyntaxIncompleteLineScore(input: List<String>): Long {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayten.txt")
+    val input = getResourceAsListOfStrings("dayten.txt")
 
     val result = calculateSyntaxIncompleteLineScore(input)
 

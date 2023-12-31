@@ -8,7 +8,7 @@ class PartOneTest {
 
     @Test
     fun `Test least risky path`() {
-        val input = getResourceAsListOfStrings("/dayfifteen.txt")
+        val input = getResourceAsListOfStrings("dayfifteen.txt")
 
         Assertions.assertEquals(40, findLeastRiskyPath(input))
     }

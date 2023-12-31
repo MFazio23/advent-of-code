@@ -16,7 +16,7 @@ fun getCode(input: List<String>, instructionCount: Int? = null) {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daythirteen.txt")
+    val input = getResourceAsListOfStrings("daythirteen.txt")
 
     getCode(input)
 }

@@ -62,7 +62,7 @@ data class Digit(
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayeight.txt")
+    val input = getResourceAsListOfStrings("dayeight.txt")
 
     val result = sevenSegmentSearchExtra(input)
 

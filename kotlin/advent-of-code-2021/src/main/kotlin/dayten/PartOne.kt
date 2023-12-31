@@ -52,7 +52,7 @@ fun getIncompleteLines(input: List<String>) = input.mapNotNull { syntaxError ->
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayten.txt")
+    val input = getResourceAsListOfStrings("dayten.txt")
 
     val result = calculateSyntaxErrorScore(input)
 

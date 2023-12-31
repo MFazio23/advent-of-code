@@ -9,7 +9,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test overlapping vents`() {
-        val testValues = getResourceAsListOfStrings("/dayfive.txt")
+        val testValues = getResourceAsListOfStrings("dayfive.txt")
 
         val result = hydrothermalVenture(testValues)
 
@@ -18,7 +18,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test large amounts of overlapping vents`() {
-        val testValues = getResourceAsListOfStrings("/dayfive-full.txt")
+        val testValues = getResourceAsListOfStrings("dayfive-full.txt")
 
         val result = hydrothermalVenture(testValues)
 

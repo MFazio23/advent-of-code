@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test
 class PartOneTest {
     @Test
     fun `Test get path count`() {
-        val input = getResourceAsListOfStrings("/daytwelve.txt")
+        val input = getResourceAsListOfStrings("daytwelve.txt")
 
         Assertions.assertEquals(10, getPathCount(input))
     }

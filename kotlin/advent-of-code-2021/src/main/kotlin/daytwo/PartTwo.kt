@@ -25,7 +25,7 @@ fun diveWithAim(input: List<String>): Int {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daytwo.txt")
+    val input = getResourceAsListOfStrings("daytwo.txt")
 
     val result = diveWithAim(input)
 

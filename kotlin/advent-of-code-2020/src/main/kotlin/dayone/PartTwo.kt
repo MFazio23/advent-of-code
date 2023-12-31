@@ -2,6 +2,12 @@ package dev.mfazio.aoc.twenty.dayone
 
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 
+fun main() {
+    val inputs = getResourceAsListOfStrings("dayone.txt").map(String::toInt)
+
+    println("Result = ${reportRepairTriple(inputs, 2020)}")
+}
+
 fun reportRepairTriple(reportItems: List<Int>, expectedTotal: Int): Int = reportItems.flatMap { first ->
     reportItems.flatMap { second ->
         reportItems.map { third ->
@@ -11,9 +17,3 @@ fun reportRepairTriple(reportItems: List<Int>, expectedTotal: Int): Int = report
         }
     }
 }.firstOrNull { it != 0 } ?: 0
-
-fun main() {
-    val inputs = getResourceAsListOfStrings("/dayone.txt").map(String::toInt)
-
-    println("Result = ${reportRepairTriple(inputs, 2020)}")
-}

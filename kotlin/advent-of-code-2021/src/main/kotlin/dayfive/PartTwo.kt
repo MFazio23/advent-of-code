@@ -14,7 +14,7 @@ fun hydrothermalVentureDiagonal(input: List<String>): Int {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayfive.txt")
+    val input = getResourceAsListOfStrings("dayfive.txt")
 
     val result = hydrothermalVentureDiagonal(input)
 

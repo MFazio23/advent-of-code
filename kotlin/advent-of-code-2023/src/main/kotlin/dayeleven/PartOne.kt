@@ -2,6 +2,7 @@ package dev.mfazio.aoc.twentythree.dayeleven
 
 import dev.mfazio.aoc.shared.types.Point
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
+import dev.mfazio.utils.extensions.orZero
 import kotlin.math.abs
 import kotlin.system.measureTimeMillis
 
@@ -59,7 +60,7 @@ fun partOne(input: List<String>): Int {
         }
     }.flatten()
 
-    val galaxies = points.filter { it.data > 0 }
+    val galaxies = points.filter { it.data.orZero() > 0 }
 
     val pairs = galaxies.flatMap { galaxy ->
         galaxies.filter { it != galaxy }.map { other ->
@@ -93,7 +94,7 @@ fun totalPathDistanceWithExpandedGalaxies(input: List<String>, factor: Int): Lon
             } else 0
             Point(value, col, row)
         }
-    }.flatten().filter { it.data > 0 }
+    }.flatten().filter { it.data.orZero() > 0 }
 
     val pairs = points.flatMap { galaxy ->
         points.filter { it != galaxy }.map { other ->

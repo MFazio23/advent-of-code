@@ -15,7 +15,7 @@ internal class PartTwoTest {
 
     @Test
     fun `Test all digits added together`() {
-        val input = getResourceAsListOfStrings("/dayeight.txt")
+        val input = getResourceAsListOfStrings("dayeight.txt")
 
         assertEquals(61229, sevenSegmentSearchExtra(input))
     }

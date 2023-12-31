@@ -4,7 +4,7 @@ import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 import java.util.*
 
 fun main() {
-    val input = getResourceAsListOfStrings("/day-five.txt")
+    val input = getResourceAsListOfStrings("day-five.txt")
 
     println(goodPartOne(input))
 }

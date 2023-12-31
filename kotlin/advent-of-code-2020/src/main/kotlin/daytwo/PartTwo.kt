@@ -38,7 +38,7 @@ data class PasswordPositionalEntry(
 }
 
 fun main() {
-    val inputs = getResourceAsListOfStrings("/daytwo.txt")
+    val inputs = getResourceAsListOfStrings("daytwo.txt")
 
     println("Result = ${passwordPhilosophyPositional(inputs)}")
 }

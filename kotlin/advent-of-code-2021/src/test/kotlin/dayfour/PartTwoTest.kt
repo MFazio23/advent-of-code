@@ -8,7 +8,7 @@ internal class PartTwoTest {
 
     @Test
     fun `Test giant squid bingo loser test data`() {
-        val testValues = getResourceAsListOfStrings("/dayfour.txt")
+        val testValues = getResourceAsListOfStrings("dayfour.txt")
 
         val result = giantSquidBingoLoser(testValues)
 

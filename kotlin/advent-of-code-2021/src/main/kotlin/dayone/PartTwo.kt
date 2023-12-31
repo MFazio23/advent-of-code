@@ -26,7 +26,7 @@ fun sonarSweepWindowedTriple(measurements: List<Int>): Int =
     sonarSweep(measurements.windowed(3, 1).map { it.sum() })
 
 fun main() {
-    val input = getResourceAsListOfStrings("/dayone.txt").map(String::toInt)
+    val input = getResourceAsListOfStrings("dayone.txt").map(String::toInt)
 
     println(sonarSweepTriple(input))
 }

@@ -2,6 +2,7 @@ package dev.mfazio.aoc.twentythree.dayeleven
 
 import dev.mfazio.aoc.shared.types.Point
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
+import dev.mfazio.utils.extensions.orZero
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.system.measureTimeMillis
@@ -49,7 +50,7 @@ fun partTwo(input: List<String>, factor: Int): Long {
         }
     }.flatten()
 
-    val galaxies = points.filter { it.data > 0 }
+    val galaxies = points.filter { it.data.orZero() > 0 }
 
     val pairs = galaxies.flatMap { galaxy ->
         galaxies.filter { it != galaxy }.map { other ->
@@ -79,7 +80,7 @@ fun printGalaxyWithExtras(points: List<Point<Int>>, extraLines: List<Int>, extra
         row.forEach {
             print(
                 when {
-                    it.data > 0 -> it.data
+                    it.data.orZero() > 0 -> it.data
                     extraLines.contains(it.y) ||
                             extraColumns.contains(it.x) -> "*"
 

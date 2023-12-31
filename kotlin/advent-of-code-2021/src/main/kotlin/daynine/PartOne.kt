@@ -16,7 +16,7 @@ fun getLowPoints(input: List<String>) = input.mapIndexed { row, rowString ->
 }.flatten().filter { (point, neighbors) -> neighbors.all { it > point.value } }.map { (point, _) -> point }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daynine.txt")
+    val input = getResourceAsListOfStrings("daynine.txt")
 
     val result = calculateTotalRiskLevel(input)
 

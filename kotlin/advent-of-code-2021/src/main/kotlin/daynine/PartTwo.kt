@@ -37,7 +37,7 @@ data class Point(val row: Int, val col: Int, val value: Int) {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daynine.txt")
+    val input = getResourceAsListOfStrings("daynine.txt")
 
     val result = calculateTotalBasinProduct(input, 3)
 

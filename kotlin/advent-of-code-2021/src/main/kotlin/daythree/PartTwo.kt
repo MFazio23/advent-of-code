@@ -48,7 +48,7 @@ fun diagnosticRatings(input: List<String>): Int {
 }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daythree.txt")
+    val input = getResourceAsListOfStrings("daythree.txt")
 
     val result = diagnosticRatings(input)
 

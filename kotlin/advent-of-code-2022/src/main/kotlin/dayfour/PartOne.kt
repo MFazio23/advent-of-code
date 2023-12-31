@@ -3,7 +3,7 @@ package dev.mfazio.aoc.twentytwo.dayfour
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 
 fun main() {
-    val input = getResourceAsListOfStrings("/day-four.txt")
+    val input = getResourceAsListOfStrings("day-four.txt")
 
     println(goodPartOne(input))
 }

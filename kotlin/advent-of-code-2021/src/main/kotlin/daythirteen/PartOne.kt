@@ -64,7 +64,7 @@ data class FoldAction(
 enum class FoldAxis { X, Y }
 
 fun main() {
-    val input = getResourceAsListOfStrings("/daythirteen.txt")
+    val input = getResourceAsListOfStrings("daythirteen.txt")
 
     val result = getVisibleDotCount(input)
 

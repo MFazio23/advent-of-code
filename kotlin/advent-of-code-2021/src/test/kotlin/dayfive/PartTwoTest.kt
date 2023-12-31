@@ -8,7 +8,7 @@ internal class PartTwoTest {
 
     @Test
     fun `Test overlapping vents with diagonals`() {
-        val testValues = getResourceAsListOfStrings("/dayfive.txt")
+        val testValues = getResourceAsListOfStrings("dayfive.txt")
 
         val result = hydrothermalVentureDiagonal(testValues)
 
