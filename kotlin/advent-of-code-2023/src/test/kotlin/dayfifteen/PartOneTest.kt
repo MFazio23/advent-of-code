@@ -8,7 +8,7 @@ internal class PartOneTest {
 
     @Test
     fun `Test part one`() {
-        val expected = 0
+        val expected = 1320
 
         val result = partOne(
             this::class.getResourceAsListOfStrings("day-fifteen.txt")
