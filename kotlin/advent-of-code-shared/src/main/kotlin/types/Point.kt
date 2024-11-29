@@ -11,11 +11,11 @@ data class Point<T>(
 
     fun isOrthogonal(other: Point<T>): Boolean =
         this.x == other.x && (this.y == other.y - 1 || this.y == other.y + 1) ||
-            this.y == other.y && (this.x == other.x - 1 || this.x == other.x + 1)
+        this.y == other.y && (this.x == other.x - 1 || this.x == other.x + 1)
 
     fun isDiagonal(other: Point<T>): Boolean =
         this.x == other.x - 1 && (this.y == other.y - 1 || this.y == other.y + 1) ||
-            this.x == other.x + 1 && (this.y == other.y - 1 || this.y == other.y + 1)
+        this.x == other.x + 1 && (this.y == other.y - 1 || this.y == other.y + 1)
 
     fun isAdjacent(other: Point<T>): Boolean =
         this.isOrthogonal(other) || this.isDiagonal(other)
