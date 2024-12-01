@@ -1,4 +1,4 @@
-from utils import load_lines_from_file, text_input_to_lines
+from utils import text_input_to_lines
 
 # print(load_lines_from_file('day-one.txt', should_trim=True))
 

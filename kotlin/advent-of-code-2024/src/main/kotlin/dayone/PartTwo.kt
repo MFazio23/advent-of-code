@@ -6,7 +6,7 @@ import kotlin.system.measureTimeMillis
 fun main() {
     measureTimeMillis {
         println(
-            partTwoQuick(
+            partTwo(
                 getResourceAsListOfStrings("day-one.txt")
             )
         )
