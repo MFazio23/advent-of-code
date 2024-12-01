@@ -7,7 +7,7 @@ import kotlin.system.measureTimeMillis
 fun main() {
     measureTimeMillis {
         println(
-            partOne(
+            partOneQuick(
                 getResourceAsListOfStrings("day-one.txt")
             )
         )
@@ -32,4 +32,21 @@ fun getLocationLists(input: List<String>): Pair<List<Int>, List<Int>> {
     }
 
     return firstList.sorted() to secondList.sorted()
+}
+
+fun partOneQuick(input: List<String>): Int {
+    val firstList = mutableListOf<Int>()
+    val secondList = mutableListOf<Int>()
+    input.forEach { line ->
+        val (first, second) = line.split("   ").map { it.toInt() }
+        firstList.add(first)
+        secondList.add(second)
+    }
+
+    firstList.sort()
+    secondList.sort()
+
+    return firstList.mapIndexed { index, first ->
+        abs(secondList[index] - first)
+    }.sum()
 }

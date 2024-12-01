@@ -6,7 +6,7 @@ import kotlin.system.measureTimeMillis
 fun main() {
     measureTimeMillis {
         println(
-            partTwo(
+            partTwoQuick(
                 getResourceAsListOfStrings("day-one.txt")
             )
         )
@@ -25,4 +25,24 @@ fun partTwo(input: List<String>): Int {
     return counts.sumOf { (number, count) ->
         count * number
     }
+}
+
+fun partTwoQuick(input: List<String>): Int {
+    val firstList = mutableListOf<Int>()
+    val secondList = mutableListOf<Int>()
+    input.forEach { line ->
+        val (first, second) = line.split("   ").map { it.toInt() }
+        firstList.add(first)
+        secondList.add(second)
+    }
+
+    val counts = firstList.associateWith { first ->
+        val count = secondList.count { second -> first == second }
+
+        count
+    }
+
+    return counts.map { (number, count) ->
+        count * number
+    }.sum()
 }
