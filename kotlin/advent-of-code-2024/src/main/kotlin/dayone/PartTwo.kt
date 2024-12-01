@@ -16,6 +16,13 @@ fun main() {
 }
 
 fun partTwo(input: List<String>): Int {
+    val (firstList, secondList) = getLocationLists(input)
 
-    return -1
+    val counts = firstList.map { first ->
+        first to secondList.count { second -> first == second }
+    }
+
+    return counts.sumOf { (number, count) ->
+        count * number
+    }
 }
