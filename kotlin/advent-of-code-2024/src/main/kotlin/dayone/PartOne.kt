@@ -17,11 +17,9 @@ fun main() {
 }
 
 fun partOne(input: List<String>): Int {
-    val (firstList, secondList) = getLocationLists(input)
+    val (first, second) = getLocationLists(input)
 
-    return firstList.mapIndexed { index, first ->
-        abs(secondList[index] - first)
-    }.sum()
+    return first.zip(second) { a, b -> abs(a - b) }.sum()
 }
 
 fun getLocationLists(input: List<String>): Pair<List<Int>, List<Int>> {
