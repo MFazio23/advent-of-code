@@ -7,8 +7,9 @@ import kotlin.system.measureTimeMillis
 fun main() {
     measureTimeMillis {
         println(
-            partTwo(
-                getResourceAsListOfStrings("day-two.txt")
+            partBoth(
+                getResourceAsListOfStrings("day-two.txt"),
+                includeFilteredGroups = true,
             )
         )
     }.also {
@@ -40,9 +41,4 @@ fun partTwo(input: List<String>): Int {
             result
         }
     }
-}
-
-fun checkGroup(group: List<Int>): Boolean {
-    val zip = group.zipWithNext { a, b -> a - b }
-    return zip.all { num -> (1..3).contains(abs(num)) && (zip.all { it >= 0 } || zip.all { it <= 0 }) }
 }
