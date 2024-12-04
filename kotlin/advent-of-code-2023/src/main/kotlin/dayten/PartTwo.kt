@@ -67,8 +67,8 @@ fun findNewStarter(points: List<Point<String>>): Point<String> {
 
     val neighbors = startingPoint.getBasicNeighbors(points)
 
-    val hasTop = listOf("|", "F", "7").contains(neighbors[NeighborType.Top]?.data)
-    val hasBottom = listOf("|", "L", "J").contains(neighbors[NeighborType.Bottom]?.data)
+    val hasTop = listOf("|", "F", "7").contains(neighbors[NeighborType.Upper]?.data)
+    val hasBottom = listOf("|", "L", "J").contains(neighbors[NeighborType.Lower]?.data)
     val hasLeft = listOf("-", "L", "F").contains(neighbors[NeighborType.Left]?.data)
     val hasRight = listOf("-", "7", "J").contains(neighbors[NeighborType.Right]?.data)
 

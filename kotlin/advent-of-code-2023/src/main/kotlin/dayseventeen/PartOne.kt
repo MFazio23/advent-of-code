@@ -60,10 +60,12 @@ fun shortestPath(
             .filter { (_, point) -> point !in seen }
             .mapKeys { (neighborType, _) ->
                 val direction = when (neighborType) {
-                    NeighborType.Top -> Direction.Up
-                    NeighborType.Bottom -> Direction.Down
+                    NeighborType.Upper -> Direction.Up
+                    NeighborType.Lower -> Direction.Down
                     NeighborType.Left -> Direction.Left
                     NeighborType.Right -> Direction.Right
+                    // I think this is fine, probably not needed
+                    else -> Direction.Up
                 }
                 direction
             }
