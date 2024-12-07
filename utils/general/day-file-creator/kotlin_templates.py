@@ -1,17 +1,12 @@
 part_template = """package dev.mfazio.aoc.{year}.day{day}
 
-import dev.mfazio.utils.extensions.getResourceAsListOfStrings
-import kotlin.system.measureTimeMillis
+import dev.mfazio.aoc.shared.runPuzzle
 
-fun main() {{
-    measureTimeMillis {{
-        println(
-            {partFunction}(
-                getResourceAsListOfStrings("day-{day}.txt")
-            )
-        )
-    }}.also {{
-        println("Time taken: $it ms")
+suspend fun main() {{
+    runPuzzle(
+        inputFileName = "day-{day}.txt",
+    ) {{
+        {partFunction}(it)
     }}
 }}
 

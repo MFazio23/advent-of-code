@@ -82,5 +82,7 @@ for source_set_path in [main_path, test_path]:
     os.makedirs(path, exist_ok=True)
     print(f"Creating empty day-{day_text}.txt resource...")
     with open(f"{path}/day-{day_text}.txt", "a"): pass
+    print(f"Creating empty day-{day_text}-small.txt resource...")
+    with open(f"{path}/day-{day_text}-small.txt", "a"): pass
 
 print("Done!")

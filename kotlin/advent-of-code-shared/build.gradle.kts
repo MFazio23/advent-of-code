@@ -9,6 +9,7 @@ group = "dev.mfazio.aoc"
 
 dependencies {
     implementation(Deps.fazioUtilsJvm)
+    implementation(Deps.kotlinCoroutines)
     
     testImplementation(Deps.kotlinTest)
 }

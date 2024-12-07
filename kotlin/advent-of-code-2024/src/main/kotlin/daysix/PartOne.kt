@@ -21,25 +21,29 @@ fun main() {
 fun partOne(input: List<String>): Int {
     val startingMap = Point.getPointsFromInput(input)
 
-    val startingPoint = startingMap.firstOrNull { it.data == "^" } ?: return -1
+    val (startingPoint, map) = getStartingPointWithMap(startingMap) ?: return -1
 
-    val traveledPoints = getTraveledPoints(startingMap, startingPoint)
+    val traveledPoints = getTraveledPoints(map, startingPoint)
 
     return traveledPoints.size
 }
 
-fun getTraveledPoints(startingMap: List<Point<String>>, startingPoint: Point<String>): List<Point<String>> {
-    val traveledPoints = mutableSetOf<Point<String>>()
+fun getStartingPointWithMap(startingMap: List<Point<String>>): Pair<Point<String>, List<Point<String>>>? {
+    val startingPoint = startingMap.firstOrNull { it.data == "^" } ?: return null
 
-    var direction = Direction.Up
-
-    val map = startingMap.map { p ->
+    return startingPoint to startingMap.map { p ->
         if (p.data == "^") {
             p.copy(data = ".")
         } else {
             p
         }
     }
+}
+
+fun getTraveledPoints(map: List<Point<String>>, startingPoint: Point<String>): List<Point<String>> {
+    val traveledPoints = mutableSetOf<Point<String>>()
+
+    var direction = Direction.Up
 
     var point = map.firstOrNull { it.x == startingPoint.x && it.y == startingPoint.y }
 

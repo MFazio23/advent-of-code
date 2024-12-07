@@ -8,6 +8,7 @@ version = "1.0.0-SNAPSHOT"
 dependencies {
     implementation(project(":advent-of-code-shared"))
     implementation(Deps.fazioUtilsJvm)
+    implementation(Deps.kotlinCoroutines)
 
     testImplementation(Deps.kotlinTest)
 }
