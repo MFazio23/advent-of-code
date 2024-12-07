@@ -1,5 +1,6 @@
 package dev.mfazio.aoc.twentythree.daysixteen
 
+import dev.mfazio.aoc.shared.types.Direction
 import dev.mfazio.aoc.shared.types.Point
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 import dev.mfazio.utils.extensions.printEach
@@ -114,16 +115,6 @@ data class ChargedPoint(
     var isCharged: Boolean = false,
     val hitDirections: MutableList<Direction> = mutableListOf()
 )
-
-enum class Direction {
-    Up,
-    Down,
-    Left,
-    Right;
-
-    fun isHorizontal() = this == Left || this == Right
-    fun isVertical() = this == Up || this == Down
-}
 
 fun printChargedPoints(points: List<ChargedPoint>) {
     val rows = points.groupBy { it.point.y }

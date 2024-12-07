@@ -50,16 +50,6 @@ data class Rule(
         return formerIndex < 0 || latterIndex < 0 || formerIndex < latterIndex
     }
 
-    fun containsPage(page: Int) = formerPage == page || latterPage == page
-
-    fun containsPages(pageA: Int, pageB: Int) = containsPage(pageA) && containsPage(pageB)
-
-    fun otherPage(page: Int) = when (page) {
-        formerPage -> latterPage
-        latterPage -> formerPage
-        else -> null
-    }
-
     companion object {
         fun fromList(list: List<String>): Rule {
             val (formerPage, latterPage) = list.map { it.toInt() }
