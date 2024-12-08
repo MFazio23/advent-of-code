@@ -1,5 +1,7 @@
 package dev.mfazio.aoc.shared.types
 
+import kotlin.math.abs
+
 data class Point<T>(
     val data: T? = null,
     val x: Int,
@@ -55,6 +57,8 @@ data class Point<T>(
         }
         return grid.firstOrNull { it.x == this.x + xOffset && it.y == this.y + yOffset }
     }
+
+    fun getDistanceTo(other: Point<T>): Int = abs(this.x - other.x) + abs(this.y - other.y)
 
     companion object {
         fun getPointsFromInput(input: List<String>): List<Point<String>> =
