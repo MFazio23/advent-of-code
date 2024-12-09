@@ -60,6 +60,13 @@ data class Point<T>(
 
     fun getDistanceTo(other: Point<T>): Int = abs(this.x - other.x) + abs(this.y - other.y)
 
+    fun getLineSlope(otherPoint: Point<T>): Double {
+        val xDiff = abs(this.x - otherPoint.x)
+        val yDiff = abs(this.y - otherPoint.y)
+
+        return (yDiff.toDouble() / xDiff.toDouble())
+    }
+
     companion object {
         fun getPointsFromInput(input: List<String>): List<Point<String>> =
             input.mapIndexed { y, line ->
@@ -67,6 +74,16 @@ data class Point<T>(
                     Point(d.toString(), x, y)
                 }
             }.flatten()
+
+        fun <T> arePointsInLine(points: List<Point<T>>): Boolean =
+            points.size <= 2 || points.crossProduct(points).map { (firstPoint, secondPoint) ->
+                if (firstPoint != secondPoint) {
+                    firstPoint.getLineSlope(secondPoint)
+                } else -1.0
+            }.let { slopes ->
+                val validSlopes = slopes.filter { it >= 0.0 }
+                validSlopes.all { it == validSlopes.first() }
+            }
     }
 }
 
@@ -114,3 +131,11 @@ enum class NeighborType {
         LowerRight -> UpperLeft
     }
 }
+
+//TODO: Move this to fazio-utils-jvm
+fun <T> List<T>.crossProduct(otherList: List<T>): List<Pair<T, T>> =
+    this.flatMap { first ->
+        otherList.map { second ->
+            first to second
+        }
+    }
