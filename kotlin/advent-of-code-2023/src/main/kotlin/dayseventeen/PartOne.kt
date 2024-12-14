@@ -1,9 +1,9 @@
 package dev.mfazio.aoc.twentythree.dayseventeen
 
+import dev.mfazio.aoc.shared.types.Direction
 import dev.mfazio.aoc.shared.types.NeighborType
 import dev.mfazio.aoc.shared.types.Point
 import dev.mfazio.aoc.shared.types.printPoints
-import dev.mfazio.aoc.twentythree.daysixteen.Direction
 import dev.mfazio.utils.extensions.filterNotNullValues
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 import dev.mfazio.utils.extensions.orZero

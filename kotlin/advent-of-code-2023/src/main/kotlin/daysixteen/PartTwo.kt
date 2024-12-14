@@ -1,5 +1,6 @@
 package dev.mfazio.aoc.twentythree.daysixteen
 
+import dev.mfazio.aoc.shared.types.Direction
 import dev.mfazio.aoc.shared.types.Point
 import dev.mfazio.utils.extensions.getResourceAsListOfStrings
 import kotlin.system.measureTimeMillis
