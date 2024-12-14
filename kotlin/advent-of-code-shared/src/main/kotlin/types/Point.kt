@@ -10,6 +10,7 @@ data class Point<T>(
     val row: Int = y
     val col: Int = x
     val coordinates = "($x, $y)"
+    val id = "$x,$y[$data]"
 
     fun isOrthogonal(other: Point<T>): Boolean =
         this.x == other.x && (this.y == other.y - 1 || this.y == other.y + 1) ||
@@ -110,27 +111,25 @@ fun <T> List<Point<T>>.printPoints(includedPoints: List<Point<T>>? = null, exclu
     }
 }
 
-enum class NeighborType {
-    Upper,
-    Lower,
-    Left,
-    Right,
-    UpperLeft,
-    UpperRight,
-    LowerLeft,
-    LowerRight;
+fun <T> List<Point<T>>.sorted(): List<Point<T>> = this.sortedWith(compareBy(Point<T>::y, Point<T>::x))
 
-    fun getOpposite() = when (this) {
-        Upper -> Lower
-        Lower -> Upper
-        Left -> Right
-        Right -> Left
-        UpperLeft -> LowerRight
-        UpperRight -> LowerLeft
-        LowerLeft -> UpperRight
-        LowerRight -> UpperLeft
-    }
+fun <T> List<Point<T>>.calculatePerimeter(): Int = this.sumOf { point ->
+    point.getBasicNeighbors(this).count { (_, neighbor) -> !this.contains(neighbor) }
 }
+
+fun <T> List<Point<T>>.sortIntoQuadrants(grid: List<Point<T>>): Map<Quadrant, List<Point<T>>> =
+    sortIntoQuadrants(grid.maxOfOrNull { it.x } ?: 0, grid.maxOfOrNull { it.y } ?: 0)
+
+fun <T> List<Point<T>>.sortIntoQuadrants(width: Int, height: Int): Map<Quadrant, List<Point<T>>> =
+    this.groupBy { point ->
+        when {
+            point.x < width / 2 && point.y < height / 2 -> Quadrant.UpperLeft
+            point.x > width / 2 && point.y < height / 2 -> Quadrant.UpperRight
+            point.x < width / 2 && point.y > height / 2 -> Quadrant.LowerLeft
+            point.x > width / 2 && point.y > height / 2 -> Quadrant.LowerRight
+            else -> Quadrant.None
+        }
+    }
 
 //TODO: Move this to fazio-utils-jvm
 fun <T> List<T>.crossProduct(otherList: List<T>): List<Pair<T, T>> =
