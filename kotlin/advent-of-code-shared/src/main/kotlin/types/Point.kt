@@ -14,11 +14,11 @@ data class Point<T>(
 
     fun isOrthogonal(other: Point<T>): Boolean =
         this.x == other.x && (this.y == other.y - 1 || this.y == other.y + 1) ||
-        this.y == other.y && (this.x == other.x - 1 || this.x == other.x + 1)
+            this.y == other.y && (this.x == other.x - 1 || this.x == other.x + 1)
 
     fun isDiagonal(other: Point<T>): Boolean =
         this.x == other.x - 1 && (this.y == other.y - 1 || this.y == other.y + 1) ||
-        this.x == other.x + 1 && (this.y == other.y - 1 || this.y == other.y + 1)
+            this.x == other.x + 1 && (this.y == other.y - 1 || this.y == other.y + 1)
 
     fun isAdjacent(other: Point<T>): Boolean =
         this.isOrthogonal(other) || this.isDiagonal(other)
@@ -115,6 +115,18 @@ fun <T> List<Point<T>>.sorted(): List<Point<T>> = this.sortedWith(compareBy(Poin
 
 fun <T> List<Point<T>>.calculatePerimeter(): Int = this.sumOf { point ->
     point.getBasicNeighbors(this).count { (_, neighbor) -> !this.contains(neighbor) }
+}
+
+fun <T> List<Point<T>>.calculateSides(grid: List<Point<T>>): Int = this.sumOf { point ->
+    val neighbors = point.getAllNeighbors(grid)
+
+    neighbors.filter { (type, _) -> type.isDiagonal }.count { (type, cornerNeighbor) ->
+        val orthogonalTypes = type.getAssociatedTypes()
+        val orthogonalNeighbors = neighbors.filter { (type, _) -> type in orthogonalTypes }
+
+        (orthogonalNeighbors.all { (_, neighbor) -> point.data != neighbor?.data }) ||
+        (orthogonalNeighbors.all { (_, neighbor) -> point.data == neighbor?.data } && cornerNeighbor?.data != point.data)
+    }
 }
 
 fun <T> List<Point<T>>.sortIntoQuadrants(grid: List<Point<T>>): Map<Quadrant, List<Point<T>>> =
