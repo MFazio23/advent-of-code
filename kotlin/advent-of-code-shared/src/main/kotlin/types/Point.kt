@@ -12,6 +12,8 @@ data class Point<T>(
     val coordinates = "($x, $y)"
     val id = "$x,$y[$data]"
 
+    fun isSameLocation(other: Point<T>): Boolean = this.x == other.x && this.y == other.y
+
     fun isOrthogonal(other: Point<T>): Boolean =
         this.x == other.x && (this.y == other.y - 1 || this.y == other.y + 1) ||
             this.y == other.y && (this.x == other.x - 1 || this.x == other.x + 1)
@@ -88,7 +90,11 @@ data class Point<T>(
     }
 }
 
-fun <T> List<Point<T>>.printPoints(includedPoints: List<Point<T>>? = null, exclusionText: String = ".") {
+fun <T> List<Point<T>>.printPoints(
+    includedPoints: List<Point<T>>? = null,
+    inclusionText: String? = null,
+    exclusionText: String? = null,
+) {
     val maxX = this.maxOfOrNull { it.x } ?: run {
         println("No max 'X' found")
         return
@@ -102,9 +108,9 @@ fun <T> List<Point<T>>.printPoints(includedPoints: List<Point<T>>? = null, exclu
         (0..maxX).forEach { x ->
             val point = this.firstOrNull { it.x == x && it.y == y }
             if (includedPoints == null || includedPoints.contains(point)) {
-                print(point?.data ?: exclusionText)
+                print(inclusionText ?: point?.data ?: "*")
             } else {
-                print(exclusionText)
+                print(exclusionText ?: point?.data ?: ".")
             }
         }
         println()

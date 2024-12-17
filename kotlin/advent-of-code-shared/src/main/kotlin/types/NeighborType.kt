@@ -21,11 +21,25 @@ enum class NeighborType(val isDiagonal: Boolean = false) {
         LowerRight -> UpperLeft
     }
 
+    fun getSides() = when (this) {
+        Upper, Lower -> listOf(Left, Right)
+        Left, Right -> listOf(Upper, Lower)
+        else -> emptyList()
+    }
+
     fun getAssociatedTypes() = when (this) {
         UpperLeft -> listOf(Upper, Left)
         UpperRight -> listOf(Upper, Right)
         LowerLeft -> listOf(Lower, Left)
         LowerRight -> listOf(Lower, Right)
         else -> listOf(this)
+    }
+
+    fun getDirection() = when (this) {
+        Upper -> Direction.Up
+        Lower -> Direction.Down
+        Left -> Direction.Left
+        Right -> Direction.Right
+        else -> null
     }
 }
