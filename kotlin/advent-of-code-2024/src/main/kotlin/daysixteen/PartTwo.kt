@@ -3,9 +3,7 @@ package dev.mfazio.aoc.twentyfour.daysixteen
 import dev.mfazio.aoc.shared.runPuzzle
 import dev.mfazio.aoc.shared.types.Direction
 import dev.mfazio.aoc.shared.types.Point
-import dev.mfazio.utils.extensions.filterNotNullValues
 import java.util.*
-import kotlin.math.min
 
 suspend fun main() {
     runPuzzle(
@@ -23,48 +21,54 @@ fun partTwo(input: List<String>): Int {
 
     val startPoint = WeightedPoint(start, Direction.Right, isVisited = false, totalValue = 0, path = listOf(start))
     val weightedPoints = mutableListOf(startPoint)
-
+    val goodPathPoints = mutableSetOf<Point<String>>()
     val pointsToCheck = PriorityQueue(weightedPoints)
+    val visitedPointValues = mutableMapOf<String, Int>()
+    var endPathCost: Int? = null
 
-    val goodPaths = mutableListOf<WeightedPoint>()
+    while (pointsToCheck.isNotEmpty()) {
+        val point = pointsToCheck.poll()
 
-    while (pointsToCheck.any()) {
-        val current = pointsToCheck.poll()
-        if (current.point == end) {
-            goodPaths.add(current)
-        }
-
-        if (!current.isVisited) {
-            current.isVisited = true
-            val neighbors = current.point.getBasicNeighbors(maze).filter { (type, neighbor) ->
-                val direction = type.getDirection()
-
-                type.getOpposite().getDirection() != current.direction &&
-                    neighbor?.data != "#" &&
-                    weightedPoints.none {
-                        it.point == neighbor && it.direction == direction && it.isVisited
-                    }
+        when {
+            endPathCost != null && point.totalValue > endPathCost -> {
+                return goodPathPoints.size
             }
-            neighbors.filterNotNullValues().forEach { (type, neighbor) ->
-                type.getDirection()?.let { direction ->
-                    val valueOffset =
-                        if (type.getSides().map { it.getDirection() }.contains(current.direction)) 1001 else 1
-                    val weightedNeighbor = WeightedPoint(neighbor, direction).apply {
-                        path = current.path + neighbor
-                    }
 
-                    weightedPoints.add(weightedNeighbor)
-                    pointsToCheck.offer(weightedNeighbor)
-                    weightedNeighbor.totalValue = min(current.totalValue + valueOffset, weightedNeighbor.totalValue)
+            point.point == end -> {
+                endPathCost = point.totalValue
+                goodPathPoints.addAll(point.path)
+            }
+
+            visitedPointValues.getOrDefault(point.id, Int.MAX_VALUE) >= point.totalValue -> {
+                visitedPointValues[point.id] = point.totalValue
+                val neighbors = point.point.getBasicNeighbors(maze).mapNotNull { neighbor ->
+                    val (type, neighborPoint) = neighbor
+                    val direction = type.getDirection()
+
+                    when {
+                        neighborPoint == null || direction == null -> null
+                        type.getOpposite().getDirection() == point.direction -> null
+                        neighborPoint.data == "#" -> null
+                        direction == point.direction -> WeightedPoint(
+                            neighborPoint,
+                            direction,
+                            totalValue = point.totalValue + 1,
+                            path = point.path + neighborPoint
+                        )
+                        else -> WeightedPoint(
+                            neighborPoint,
+                            direction,
+                            totalValue = point.totalValue + 1001,
+                            path = point.path + neighborPoint
+                        )
+                    }
                 }
+
+                pointsToCheck.addAll(neighbors)
             }
         }
     }
 
-    val bestPathValue = goodPaths.minOf { it.totalValue }
-    val bestPaths = goodPaths.filter { it.totalValue == bestPathValue }
-
-    val points = bestPaths.flatMap { it.path }.distinct()
-
-    return points.size
+    return goodPathPoints.size
 }
+

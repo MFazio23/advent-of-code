@@ -68,6 +68,7 @@ data class WeightedPoint(
     var path: List<Point<String>> = emptyList()
 ) : Comparable<WeightedPoint> {
     val data = point.data
+    val id = "${point.id}-${direction.name}"
 
     override fun compareTo(other: WeightedPoint): Int = this.totalValue - other.totalValue
 }
