@@ -10,7 +10,7 @@ suspend fun main() {
     }
 }
 
-const val PRIZE_FACTOR = 10_000_000_000_000L
+const val PRIZE_OFFSET = 10_000_000_000_000L
 
 fun partTwo(input: List<String>): Long {
     val instructions = getInstructions(input).map { instruction ->
@@ -19,7 +19,7 @@ fun partTwo(input: List<String>): Long {
         LongClawInstruction(
             buttonA = ClawPoint(buttonA.x.toLong(), buttonA.y.toLong()),
             buttonB = ClawPoint(buttonB.x.toLong(), buttonB.y.toLong()),
-            prize = ClawPoint(prize.x + PRIZE_FACTOR, prize.y + PRIZE_FACTOR)
+            prize = ClawPoint(prize.x + PRIZE_OFFSET, prize.y + PRIZE_OFFSET)
         )
     }
 
