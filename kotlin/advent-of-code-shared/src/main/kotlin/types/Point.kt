@@ -1,5 +1,6 @@
 package dev.mfazio.aoc.shared.types
 
+import dev.mfazio.utils.extensions.crossProduct
 import kotlin.math.abs
 
 data class Point<T>(
@@ -87,6 +88,13 @@ data class Point<T>(
                 val validSlopes = slopes.filter { it >= 0.0 }
                 validSlopes.all { it == validSlopes.first() }
             }
+
+        fun <T> generateGrid(data: T, width: Int, height: Int): List<Point<T>> =
+            (0 until height).flatMap { y ->
+                (0 until width).map { x ->
+                    Point(data, x, y)
+                }
+            }
     }
 }
 
@@ -106,11 +114,11 @@ fun <T> List<Point<T>>.printPoints(
 
     (0..maxY).forEach { y ->
         (0..maxX).forEach { x ->
-            val point = this.firstOrNull { it.x == x && it.y == y }
-            if (includedPoints == null || includedPoints.contains(point)) {
-                print(inclusionText ?: point?.data ?: "*")
+            val point = this.firstOrNull { it.x == x && it.y == y } ?: return@forEach
+            if (includedPoints == null || includedPoints.any { it.isSameLocation(point) }) {
+                print(inclusionText ?: point.data ?: "*")
             } else {
-                print(exclusionText ?: point?.data ?: ".")
+                print(exclusionText ?: point.data ?: ".")
             }
         }
         println()
@@ -146,13 +154,5 @@ fun <T> List<Point<T>>.sortIntoQuadrants(width: Int, height: Int): Map<Quadrant,
             point.x < width / 2 && point.y > height / 2 -> Quadrant.LowerLeft
             point.x > width / 2 && point.y > height / 2 -> Quadrant.LowerRight
             else -> Quadrant.None
-        }
-    }
-
-//TODO: Move this to fazio-utils-jvm
-fun <T> List<T>.crossProduct(otherList: List<T>): List<Pair<T, T>> =
-    this.flatMap { first ->
-        otherList.map { second ->
-            first to second
         }
     }

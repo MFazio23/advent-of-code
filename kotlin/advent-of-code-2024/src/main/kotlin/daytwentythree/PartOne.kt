@@ -1,8 +1,7 @@
 package dev.mfazio.aoc.twentyfour.daytwentythree
 
 import dev.mfazio.aoc.shared.runPuzzle
-import dev.mfazio.aoc.shared.types.crossProduct
-import dev.mfazio.utils.extensions.printEach
+import dev.mfazio.utils.extensions.crossProduct
 
 suspend fun main() {
     runPuzzle(
@@ -30,7 +29,7 @@ fun partOne(input: List<String>): Int {
     val trios = computerConnections.flatMap { (computer, connected) ->
         val combos = connected
             .crossProduct(connected)
-            .map { (a, b) -> listOf(a,b).distinct().sorted() }
+            .map { (a, b) -> listOf(a, b).distinct().sorted() }
             .filter { it.size == 2 }
             .filter { (a, b) ->
                 connections.any { (first, second) -> first == a && second == b || first == b && second == a }

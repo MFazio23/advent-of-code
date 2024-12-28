@@ -2,7 +2,7 @@ package dev.mfazio.aoc.twentyfour.daytwenty
 
 import dev.mfazio.aoc.shared.runPuzzle
 import dev.mfazio.aoc.shared.types.Point
-import dev.mfazio.aoc.shared.types.crossProduct
+import dev.mfazio.utils.extensions.crossProduct
 import dev.mfazio.utils.extensions.getOrZero
 import dev.mfazio.utils.extensions.orZero
 import java.util.*
